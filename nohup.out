@@ -84,3 +84,692 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 378ms (Views: 189.9ms)
 
 
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 192.168.56.1 at 2017-10-24 21:10:29 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 28ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:10:29 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 241ms (Views: 213.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for 192.168.56.1 at 2017-10-24 21:10:34 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:10:36 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 192.168.56.1 at 2017-10-24 21:10:37 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/passwords/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:10:39 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:10:48 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4nCSMRxw521zPiykZkTc82yUQpB9dGEqaAui2BecYsgLDHQ67hZzW48JVZ0njVHcTIrJrjCAknZ8GTyoxvXcfA==", "user"=>{"email"=>"srivasthavsanigaram@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "srivasthavsanigaram@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.8ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4nCSMRxw521zPiykZkTc82yUQpB9dGEqaAui2BecYsgLDHQ67hZzW48JVZ0njVHcTIrJrjCAknZ8GTyoxvXcfA==", "user"=>{"email"=>"srivasthavsanigaram@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 209ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.56.1 at 2017-10-24 21:10:57 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.56.1 at 2017-10-24 21:11:27 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pe56rd7d6TyfoeYC9cV8k1496wS6e+lmy1aHkGrWVhlTp5jJl3RKTL+HbIowyViZh83m6eO2/OukZ7q1g2Oslw==", "user"=>{"email"=>"srivasthavsanigaram@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "srivasthavsanigaram@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "srivasthavsanigaram@gmail.com"], ["encrypted_password", "$2a$11$WjxzWUjLQhvB5cVVdg.X/uuAr/GiAQ9fVBTMQVr6Lr6sBKOpEOSs6"], ["created_at", "2017-10-24 21:11:27.351221"], ["updated_at", "2017-10-24 21:11:27.351221"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-10-24 21:11:27.362677"], ["last_sign_in_at", "2017-10-24 21:11:27.362677"], ["current_sign_in_ip", "192.168.56.1"], ["last_sign_in_ip", "192.168.56.1"], ["updated_at", "2017-10-24 21:11:27.363552"], ["id", 1]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 234ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 21:11:27 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 192.168.56.1 at 2017-10-24 21:11:28 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5AbUqRR4x3oy2xNkKqN6sQReiuc8RNwi+/Kr3Qu03zZV7S9xY+UlRvlSvCZYhM9UiJdodFj1/pd2duOr/EHnLQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 21:11:28 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:11:28 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:11:39 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qvSrajiZObbl1l4yXRHTcP4oHfHqTFGpdtGpjJ07B91NND+bcm+X6Zc5u5kQuH9rGCUHxPJMC/5eEoIbc9ciGQ==", "user"=>{"email"=>"srivasthavsanigaram@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "srivasthavsanigaram@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-10-24 21:11:39.987654"], ["sign_in_count", 2], ["updated_at", "2017-10-24 21:11:39.988580"], ["id", 1]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 197ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 21:11:40 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 192.168.56.1 at 2017-10-24 21:11:42 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+8DCL66ObLCZ0PozFlq84hKZX1Uah6U673ezJi2iyYbcv9tyZC73cEizuqW29mbGJ9tr9Mj/GwUq6fBYxzaW7g=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 21:11:42 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:11:42 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:25:01 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (179.0ms)
+Completed 500 Internal Server Error in 920ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__523445509895413572_70316233058880'
+Started GET "/" for 192.168.56.1 at 2017-10-24 21:25:10 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:25:10 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__523445509895413572_70316237958540'
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:25:12 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__523445509895413572_70316254644160'
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:25:13 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__523445509895413572_70316268602580'
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:58:57 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 243ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.56.1 at 2017-10-24 21:59:25 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9kxdWBI6l7jOIbdesWVeFi/sRsf9+bc9LOd9muWFEP3GJwbhoAEMPGaQ3+zTmTEBhgAkptUDg1tG38hjR/ER0A==", "user"=>{"email"=>"srivasthavsanigaram@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "srivasthavsanigaram@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-10-24 21:59:25.531177"], ["last_sign_in_at", "2017-10-24 21:11:39.987654"], ["sign_in_count", 3], ["updated_at", "2017-10-24 21:59:25.532487"], ["id", 1]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 262ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 21:59:25 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 69ms (Views: 44.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 192.168.56.1 at 2017-10-24 22:01:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fZJs2yg5p1uuDohLmTRUrdsiEMnssW3pkkNBHwmavKTZKnb8YO5wsNc5sjpCNDcXLFd3A+MQEqAyz7j3jCi2sA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 22:01:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:01:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/path1" for 192.168.56.1 at 2017-10-24 22:01:08 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/path1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:05:27 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /u01/rails_projects/fin-app/app/assets/config
+  /u01/rails_projects/fin-app/app/assets/images
+  /u01/rails_projects/fin-app/app/assets/javascripts
+  /u01/rails_projects/fin-app/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/devise-bootstrap-views-0.0.11/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actionview-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /u01/rails_projects/fin-app/node_modules):
+    29:     <!-- Size should be 32 x 32 pixels -->
+    30:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    31: 
+    32:     <%= javascript_include_tag "application" %>
+    33: 
+    34:     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    35:     <!--[if lt IE 9]>
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:32:in `_app_views_layouts_application_html_erb__523445509895413572_70316268764080'
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:06:20 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (154.1ms)
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /u01/rails_projects/fin-app/app/assets/config
+  /u01/rails_projects/fin-app/app/assets/images
+  /u01/rails_projects/fin-app/app/assets/javascripts
+  /u01/rails_projects/fin-app/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/devise-bootstrap-views-0.0.11/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actionview-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /u01/rails_projects/fin-app/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinApp" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__611886567203574150_70132388331320'
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:08:07 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (159.1ms)
+Completed 200 OK in 593ms (Views: 535.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:09:15 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7UHLJeFm8/V1XRU51fr07xV2lx6lt8KXTj9Dya6WI1Z5sA1M0vYATcUeLP+cfqcnDltPzje1wfU4jtiD0Lfehg==", "user"=>{"email"=>"srivasthavsanigaram@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "srivasthavsanigaram@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-10-24 22:09:15.205264"], ["last_sign_in_at", "2017-10-24 21:59:25.531177"], ["sign_in_count", 4], ["updated_at", "2017-10-24 22:09:15.207281"], ["id", 1]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 214ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 22:09:15 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 192.168.56.1 at 2017-10-24 22:09:50 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Og/Mh1U5EXWNZB4S1i11eszC85aOmqgAgKTOdmkX7GSiWqMa+j+PD9NThJpdG0DWnwwCbvyk3iDdOE2eSIMRkA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-24 22:09:50 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:09:50 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:09:55 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:09:57 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4r+qqzfTGpuevaK6+HWtD00ECqsplclrUtJzr4i81EPxq2rOV/m75V5hQClVSGweB9v8Pu9ZXAaa/yZJXImbhw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4r+qqzfTGpuevaK6+HWtD00ECqsplclrUtJzr4i81EPxq2rOV/m75V5hQClVSGweB9v8Pu9ZXAaa/yZJXImbhw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:12:59 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (153.1ms)
+Completed 500 Internal Server Error in 465ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /u01/rails_projects/fin-app/app/assets/config
+  /u01/rails_projects/fin-app/app/assets/images
+  /u01/rails_projects/fin-app/app/assets/javascripts
+  /u01/rails_projects/fin-app/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/devise-bootstrap-views-0.0.11/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actionview-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /u01/rails_projects/fin-app/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinApp" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__1941219087443990890_70293617358280'
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:16:27 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /u01/rails_projects/fin-app/app/assets/config
+  /u01/rails_projects/fin-app/app/assets/images
+  /u01/rails_projects/fin-app/app/assets/javascripts
+  /u01/rails_projects/fin-app/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/devise-bootstrap-views-0.0.11/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actionview-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /u01/rails_projects/fin-app/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinApp" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__1941219087443990890_70293635160320'
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:16:55 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 113ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.4) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.4) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.4) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.4) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:17:41 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 217ms (Views: 215.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.56.1 at 2017-10-24 22:17:44 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LQEf69oWD8gGKuj7CekqhNKRYTMHZrq8GX4Hjhn67nI+Fd+Oujyutsb2Cmik1OuVmE6XpsGqL9HRU1Jozc+htg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LQEf69oWD8gGKuj7CekqhNKRYTMHZrq8GX4Hjhn67nI+Fd+Oujyutsb2Cmik1OuVmE6XpsGqL9HRU1Jozc+htg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
